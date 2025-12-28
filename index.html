@@ -1,12 +1,434 @@
-<!doctype html>
-<html lang="he">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>האתר שלי</title>
-  </head>
-  <body>
-    <h1>היי 👋 זה האתר שלי</h1>
-    <p>עוד מעט יעלה פה תוכן רציני.</p>
-  </body>
-</html>
+<!DOCTYPE html>
+
+<html lang="he" dir="rtl">
+
+<head>
+
+&nbsp;   <meta charset="UTF-8">
+
+&nbsp;   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+&nbsp;   <title>Electrical Engineering Portfolio | Student Project</title>
+
+&nbsp;   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+
+&nbsp;   <style>
+
+&nbsp;       :root {
+
+&nbsp;           --primary: #001219; /\* כחול עמוק תעשייתי \*/<!DOCTYPE html>
+
+<html lang="he" dir="rtl">
+
+<head>
+
+&nbsp;   <meta charset="UTF-8">
+
+&nbsp;   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+&nbsp;   <title>Electrical Engineering Portfolio | Student Project</title>
+
+&nbsp;   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+
+&nbsp;   <style>
+
+&nbsp;       :root {
+
+&nbsp;           --primary: #001219; /\* כחול עמוק תעשייתי \*/
+
+&nbsp;           --accent: #ee9b00;  /\* כתום "זהירות" חשמלי \*/
+
+&nbsp;           --light-blue: #005f73;
+
+&nbsp;           --glass: rgba(255, 255, 255, 0.1);
+
+&nbsp;           --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+&nbsp;       }
+
+
+
+&nbsp;       body {
+
+&nbsp;           margin: 0;
+
+&nbsp;           font-family: 'Assistant', sans-serif;
+
+&nbsp;           background-color: var(--primary);
+
+&nbsp;           color: #fff;
+
+&nbsp;           overflow-x: hidden;
+
+&nbsp;       }
+
+
+
+&nbsp;       /\* רקע דינמי - תרשים הנדסי \*/
+
+&nbsp;       .bg-pattern {
+
+&nbsp;           position: fixed;
+
+&nbsp;           top: 0; left: 0; width: 100%; height: 100%;
+
+&nbsp;           background-image: 
+
+&nbsp;               linear-gradient(rgba(0, 18, 25, 0.9), rgba(0, 18, 25, 0.9)),
+
+&nbsp;               url('https://www.transparenttextures.com/patterns/graphy.png');
+
+&nbsp;           z-index: -1;
+
+&nbsp;       }
+
+
+
+&nbsp;       /\* Header מתוחכם \*/
+
+&nbsp;       header {
+
+&nbsp;           display: flex;
+
+&nbsp;           justify-content: space-between;
+
+&nbsp;           align-items: center;
+
+&nbsp;           padding: 25px 8%;
+
+&nbsp;           backdrop-filter: blur(10px);
+
+&nbsp;           border-bottom: 1px solid rgba(255,255,255,0.1);
+
+&nbsp;           position: sticky;
+
+&nbsp;           top: 0;
+
+&nbsp;           z-index: 100;
+
+&nbsp;       }
+
+
+
+&nbsp;       .logo {
+
+&nbsp;           font-size: 1.5rem;
+
+&nbsp;           font-weight: 800;
+
+&nbsp;           text-transform: uppercase;
+
+&nbsp;           letter-spacing: 2px;
+
+&nbsp;           color: var(--accent);
+
+&nbsp;       }
+
+
+
+&nbsp;       .nav-links a {
+
+&nbsp;           color: white;
+
+&nbsp;           text-decoration: none;
+
+&nbsp;           margin-right: 30px;
+
+&nbsp;           font-size: 0.9rem;
+
+&nbsp;           letter-spacing: 1px;
+
+&nbsp;           transition: var(--transition);
+
+&nbsp;       }
+
+
+
+&nbsp;       .nav-links a:hover { color: var(--accent); }
+
+
+
+&nbsp;       /\* Hero Section - עיצוב Shopify פרימיום \*/
+
+&nbsp;       .hero {
+
+&nbsp;           height: 80vh;
+
+&nbsp;           display: flex;
+
+&nbsp;           align-items: center;
+
+&nbsp;           justify-content: center;
+
+&nbsp;           text-align: center;
+
+&nbsp;           padding: 0 10%;
+
+&nbsp;           background: radial-gradient(circle at center, #005f73 0%, #001219 70%);
+
+&nbsp;       }
+
+
+
+&nbsp;       .hero-content {
+
+&nbsp;           max-width: 900px;
+
+&nbsp;           animation: fadeIn 1.5s ease-out;
+
+&nbsp;       }
+
+
+
+&nbsp;       @keyframes fadeIn {
+
+&nbsp;           from { opacity: 0; transform: translateY(20px); }
+
+&nbsp;           to { opacity: 1; transform: translateY(0); }
+
+&nbsp;       }
+
+
+
+&nbsp;       .hero h1 {
+
+&nbsp;           font-size: 4rem;
+
+&nbsp;           margin-bottom: 10px;
+
+&nbsp;           line-height: 1.1;
+
+&nbsp;       }
+
+
+
+&nbsp;       .hero .badge {
+
+&nbsp;           background: var(--accent);
+
+&nbsp;           color: var(--primary);
+
+&nbsp;           padding: 5px 15px;
+
+&nbsp;           font-weight: bold;
+
+&nbsp;           font-size: 0.8rem;
+
+&nbsp;           border-radius: 50px;
+
+&nbsp;           margin-bottom: 20px;
+
+&nbsp;           display: inline-block;
+
+&nbsp;       }
+
+
+
+&nbsp;       .hero p {
+
+&nbsp;           font-size: 1.4rem;
+
+&nbsp;           color: rgba(255,255,255,0.8);
+
+&nbsp;           margin-bottom: 30px;
+
+&nbsp;           font-weight:
+
+&nbsp;           --accent: #ee9b00;  /\* כתום "זהירות" חשמלי \*/
+
+&nbsp;           --light-blue: #005f73;
+
+&nbsp;           --glass: rgba(255, 255, 255, 0.1);
+
+&nbsp;           --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+&nbsp;       }
+
+
+
+&nbsp;       body {
+
+&nbsp;           margin: 0;
+
+&nbsp;           font-family: 'Assistant', sans-serif;
+
+&nbsp;           background-color: var(--primary);
+
+&nbsp;           color: #fff;
+
+&nbsp;           overflow-x: hidden;
+
+&nbsp;       }
+
+
+
+&nbsp;       /\* רקע דינמי - תרשים הנדסי \*/
+
+&nbsp;       .bg-pattern {
+
+&nbsp;           position: fixed;
+
+&nbsp;           top: 0; left: 0; width: 100%; height: 100%;
+
+&nbsp;           background-image: 
+
+&nbsp;               linear-gradient(rgba(0, 18, 25, 0.9), rgba(0, 18, 25, 0.9)),
+
+&nbsp;               url('https://www.transparenttextures.com/patterns/graphy.png');
+
+&nbsp;           z-index: -1;
+
+&nbsp;       }
+
+
+
+&nbsp;       /\* Header מתוחכם \*/
+
+&nbsp;       header {
+
+&nbsp;           display: flex;
+
+&nbsp;           justify-content: space-between;
+
+&nbsp;           align-items: center;
+
+&nbsp;           padding: 25px 8%;
+
+&nbsp;           backdrop-filter: blur(10px);
+
+&nbsp;           border-bottom: 1px solid rgba(255,255,255,0.1);
+
+&nbsp;           position: sticky;
+
+&nbsp;           top: 0;
+
+&nbsp;           z-index: 100;
+
+&nbsp;       }
+
+
+
+&nbsp;       .logo {
+
+&nbsp;           font-size: 1.5rem;
+
+&nbsp;           font-weight: 800;
+
+&nbsp;           text-transform: uppercase;
+
+&nbsp;           letter-spacing: 2px;
+
+&nbsp;           color: var(--accent);
+
+&nbsp;       }
+
+
+
+&nbsp;       .nav-links a {
+
+&nbsp;           color: white;
+
+&nbsp;           text-decoration: none;
+
+&nbsp;           margin-right: 30px;
+
+&nbsp;           font-size: 0.9rem;
+
+&nbsp;           letter-spacing: 1px;
+
+&nbsp;           transition: var(--transition);
+
+&nbsp;       }
+
+
+
+&nbsp;       .nav-links a:hover { color: var(--accent); }
+
+
+
+&nbsp;       /\* Hero Section - עיצוב Shopify פרימיום \*/
+
+&nbsp;       .hero {
+
+&nbsp;           height: 80vh;
+
+&nbsp;           display: flex;
+
+&nbsp;           align-items: center;
+
+&nbsp;           justify-content: center;
+
+&nbsp;           text-align: center;
+
+&nbsp;           padding: 0 10%;
+
+&nbsp;           background: radial-gradient(circle at center, #005f73 0%, #001219 70%);
+
+&nbsp;       }
+
+
+
+&nbsp;       .hero-content {
+
+&nbsp;           max-width: 900px;
+
+&nbsp;           animation: fadeIn 1.5s ease-out;
+
+&nbsp;       }
+
+
+
+&nbsp;       @keyframes fadeIn {
+
+&nbsp;           from { opacity: 0; transform: translateY(20px); }
+
+&nbsp;           to { opacity: 1; transform: translateY(0); }
+
+&nbsp;       }
+
+
+
+&nbsp;       .hero h1 {
+
+&nbsp;           font-size: 4rem;
+
+&nbsp;           margin-bottom: 10px;
+
+&nbsp;           line-height: 1.1;
+
+&nbsp;       }
+
+
+
+&nbsp;       .hero .badge {
+
+&nbsp;           background: var(--accent);
+
+&nbsp;           color: var(--primary);
+
+&nbsp;           padding: 5px 15px;
+
+&nbsp;           font-weight: bold;
+
+&nbsp;           font-size: 0.8rem;
+
+&nbsp;           border-radius: 50px;
+
+&nbsp;           margin-bottom: 20px;
+
+&nbsp;           display: inline-block;
+
+&nbsp;       }
+
+
+
+&nbsp;       .hero p {
+
+&nbsp;           font-size: 1.4rem;
+
+&nbsp;           color: rgba(255,255,255,0.8);
+
+&nbsp;           margin-bottom: 30px;
+
+&nbsp;           font-weight:
+
